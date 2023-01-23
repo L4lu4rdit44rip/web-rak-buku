@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*memberikan tampilan warna pada body*/
+body{
+    background-color: burlywood;
+}
+/*memberikan tampilan pada header*/
+.header {
+    padding: 12px;
+    display: flex;
+    background-color: brown;
+    color: white;
+    text-align: center;
+}
+/*membrikan tampilan pada bagian utama*/
+main {
+    max-width: 700px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+/*meberikan tampilan pada tabel*/
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 4px solid black;
+    border-radius: 15px;
+}
+/* memberikan tampilan pada tulisan*/
+.input_section > h2 {
+    text-align: center;
+    color: black;
+}
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.input_section > form > .input > label {
+    color: black;
+    font-weight: bold;
+}
+/*tampilan pada buotton*/
+#bookSubmit{
+    background-color: blue;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+}
+/*tampilan pada tabel pencarian*/
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+/*tampilan pada judul label*/
+.search_section > h2 {
+    color: black;
+}
+/*tampilan label pencarian*/
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+}
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+.search_section > form > input {
+    padding: 10px;
+    border-radius: 5px;
+}
+/*ukuran input*/
+#searchBookTitle{
+    width: 100%;
+}
+/*button pencarian */
+.search_section > form > input:last-child {
+    background-color: blue;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+}
+/*tampilan pada tabel/rak belum dibaca dan selesi di baca*/
+/*tampilan label*/
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 4px solid black;
+    padding: 16px;
+    border-radius: 10px;
+}
+/*tulisan*/
+.book_shelf > h2,.book_list >h2 {
+    color: black;
+}
+/*tamilan pada halam yang tersimpan*/
+.book_shelf > .book_list ,.book_item{
+    padding: 16px;
+}
+.book_shelf > .book_list > .book_item,.book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: white;
+}
+.book_shelf > .book_list > .book_item > h3, p,.book_item {
+    margin: 8px 0;
+}
+/*tampilan button pada tabel*/
+.book_shelf > .book_list > .book_item > .action > button,.book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*button selesai atau belum selsesi*/
+.book_list > .book_item > .action > .blue {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+/*button untuk menghapus*/
+.book_list > .book_item > .action > .red {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+/*bagian footer*/
+footer{
+    text-align: center;
+    padding: 20px;
+    height: 80px;
+    color: white;
+    background-color: brown;
+    font-weight: bold;
+}
